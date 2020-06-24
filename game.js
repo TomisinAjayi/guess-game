@@ -70,7 +70,7 @@ function setGameOver() {
     resetButton.style.textAlign = 'center';
     resetButton.style.fontSize = '20px';
     resetButton.style.width = '200px';
-
+    resetButton.style.marginBottom = '100px';
 }
 
 function resetGame() {
