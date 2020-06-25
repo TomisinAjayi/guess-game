@@ -48,11 +48,18 @@ function checkGuess() {
     guessCount++;
     guessField.value = '';
     guessField.focus();
+    showProgress();
 }
 
 guessCount === 1;
 
 guessSubmit.addEventListener('click' , checkGuess);
+
+function showProgress() {
+    const turnNumber = document.querySelector('strong');
+    var turnsLeft = 11 - guessCount;
+    turnNumber.innerHTML = "Pick a number between 1 - 50." + "<br>" + "You have " +turnsLeft + " TURNS.";
+};
 
 function setGameOver() {
     guessField.disabled = true;
@@ -86,6 +93,7 @@ function resetGame() {
     guessSubmit.disabled = false;
     guessField.value = '';
     guessField.focus();
+    showProgress();
 
     lastResult.style.backgroundColor = 'white';
 
