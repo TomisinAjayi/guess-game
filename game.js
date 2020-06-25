@@ -94,6 +94,7 @@ function resetGame() {
     resetButton.parentNode.removeChild(resetButton);
 
     guesses.textContent = '';
+    lowOrHigh.textContent = '';
     guessField.disabled = false;
     guessSubmit.disabled = false;
     guessField.value = '';
