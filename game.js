@@ -57,8 +57,12 @@ guessSubmit.addEventListener('click' , checkGuess);
 
 function showProgress() {
     const turnNumber = document.querySelector('strong');
-    var turnsLeft = 11 - guessCount;
+    var turnsLeft = 11 - guessCount; 
+    if(turnsLeft === 1) {
+        turnNumber.innerHTML = "Pick a number between 1 - 50." + "<br>" + "You have " +turnsLeft + " TURN.";
+    } else {
     turnNumber.innerHTML = "Pick a number between 1 - 50." + "<br>" + "You have " +turnsLeft + " TURNS.";
+    }
 };
 
 function setGameOver() {
