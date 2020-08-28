@@ -50,6 +50,7 @@ i {
     text-align: center;
     border: 1px solid purple;
     width: 200px;
+    outline: none;
 }
 
 @media  (min-width: 992px){

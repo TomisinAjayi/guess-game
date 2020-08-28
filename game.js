@@ -82,6 +82,7 @@ function setGameOver() {
     resetButton.style.fontSize = '20px';
     resetButton.style.width = '200px';
     resetButton.style.marginBottom = '100px';
+    resetButton.style.outline = "none";
 }
 
 function resetGame() {
